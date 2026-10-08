@@ -1,0 +1,61 @@
+{
+ "corpus": "atcoder",
+ "built_at": "2026-10-07T15:23:49+00:00",
+ "inputs": [
+  "raw/atcoder_kenkoooo_dump/2025-11-21_u05",
+  "raw/atcoder_kenkoooo_resources/acq-2026-10-07"
+ ],
+ "input_manifest_sha256": {
+  "atcoder_kenkoooo_dump/2025-11-21_u05": "84143359e59e2f7dfa872ab918bf7e9bb99df9c287b797e4b6dc23a02c476b3c",
+  "atcoder_kenkoooo_resources/acq-2026-10-07": "a9714f6c614d477e8359a93d9db7b68a9676487f620a395f47ceb28f32f33efb"
+ },
+ "script": "src/canonical/build_atcoder.py",
+ "script_sha256": "9dc85d5946e4c254e6db49ddd86eaf27f77c9c65f62c08451cab108f6d73eddb",
+ "maps": {
+  "verdict_map.csv": "764ef4659e9ad7e991310cb589db90a50da41678187cbcaf4d76ac7fb0c0d686",
+  "language_family.csv": "3eac86ddb353157395f32af9858b07e4554e694b1e5bf0a9e163c0ab3e7f7a28"
+ },
+ "user_salt_sha256": "e160461f318d7a145d5659b358c37dfd754224f93a1faa031cbc576f08734dad",
+ "duckdb": "1.5.6",
+ "checks": {
+  "submissions == dump rows": true,
+  "submission_uid unique": true,
+  "every verdict mapped": true,
+  "users == distinct raw handles (no hash collision)": true,
+  "timestamps parse": true,
+  "problem_uid unique": true,
+  "contest_uid unique": true
+ },
+ "counts": {
+  "submissions": 3275403,
+  "users": 30913,
+  "problems": 9673,
+  "contests": 6533,
+  "contest_problems": 40200,
+  "problems_with_irt_difficulty": 4855,
+  "submissions_whose_problem_not_in_problems": 1728,
+  "submissions_whose_contest_not_in_contests": 0,
+  "verdicts": {
+   "AC": 1821979,
+   "WA": 955735,
+   "RE": 193942,
+   "TLE": 179161,
+   "CE": 120591,
+   "MLE": 3554,
+   "OLE": 289,
+   "PENDING": 62,
+   "JUDGE_ERROR": 48,
+   "OTHER": 42
+  },
+  "top_lang_families": {
+   "C++": 2064589,
+   "Python": 765354,
+   "Java": 103198,
+   "C": 76071,
+   "Rust": 57189,
+   "C#": 49968,
+   "Ruby": 26675,
+   "Go": 20503
+  }
+ }
+}

@@ -1,0 +1,60 @@
+{
+ "name": "positives_p1",
+ "version": 2,
+ "built_at": "2026-10-08T01:55:58+00:00",
+ "script": "src/derived/positives_p1.py",
+ "script_sha256": "6ae7d1d0c5ecadc22a3e598ff6aea61dae5867913e15f93786bde776ead6f27b",
+ "params": {
+  "min_prior_ac_with_code": 10,
+  "per_user": 5,
+  "corpora": [
+   "codenet",
+   "codeforces"
+  ],
+  "language": "C++",
+  "target_choice": "lowest sha256('p1-target:' || submission_uid) among eligible, per user",
+  "donor_choice": "lowest sha256('p1-donor:' || target || donor_submission) among other solvers with code; donors who solved before t preferred"
+ },
+ "is_synthetic": true,
+ "inputs": {
+  "canonical_builds": {
+   "atcoder": "20963f1578adcc460c19eff17b7e92f85917e01e97397d64efc68d6ae1d51bd4",
+   "codeforces": "e5020b4cdb941ded7a70018e5a3e6ca8a8868b16a32c334db00fcd7b765528a9",
+   "codenet": "bf9f92c1dca5cb20bfc64c9c3c9c54370227dccfc77d1befd0edc2a9128e1abb"
+  },
+  "derived": {
+   "attempts/v1": "fd8680b1f8ab2a0844319ba0410e42c55d1afcf8183c5ed2ee2469abc493ac55",
+   "splits/v1": "dcb8b2f4eae09168285d330471535f150447b3a8d718a30d630bc84730e7aa4f",
+   "cohorts/v1": "afa941ff0829c682de8fa08230c5a459d4092d3b7bdbbe6a99ef11e381ec21bd"
+  }
+ },
+ "duckdb": "1.5.6",
+ "checks": {
+  "every pair has exactly one positive and one negative": true,
+  "donor is never the target user": true,
+  "swapped code differs from the original": true,
+  "every target has >= 10 strictly earlier ACs with code": true,
+  "at most 5 targets per user": true
+ },
+ "counts": {
+  "pairs_by_split": {
+   "codeforces/test": 1148,
+   "codeforces/train": 4584,
+   "codeforces/val": 914,
+   "codenet/test": 6335,
+   "codenet/train": 28479,
+   "codenet/val": 6007
+  },
+  "users_by_split": {
+   "codeforces/test": 252,
+   "codeforces/train": 997,
+   "codeforces/val": 199,
+   "codenet/test": 1374,
+   "codenet/train": 6175,
+   "codenet/val": 1311
+  },
+  "donor_solved_before_t_rate": 0.9923,
+  "eligible_submissions": 842279,
+  "targets_without_any_donor": 82
+ }
+}

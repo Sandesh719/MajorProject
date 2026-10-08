@@ -1,0 +1,57 @@
+{
+ "name": "splits",
+ "version": 1,
+ "built_at": "2026-10-08T01:51:40+00:00",
+ "script": "src/derived/splits.py",
+ "script_sha256": "94a975fa931a7c7d5dc4ad02ddfe94684719972c702c66b90f2f1af5e22d3b54",
+ "params": {
+  "rule": "u = int(sha256('split-v1:' + user_uid)[:8], 16) / 16**8",
+  "train": 0.7,
+  "val": 0.15,
+  "test": 0.15
+ },
+ "is_synthetic": false,
+ "inputs": {
+  "canonical_builds": {
+   "atcoder": "20963f1578adcc460c19eff17b7e92f85917e01e97397d64efc68d6ae1d51bd4",
+   "codeforces": "e5020b4cdb941ded7a70018e5a3e6ca8a8868b16a32c334db00fcd7b765528a9",
+   "codenet": "bf9f92c1dca5cb20bfc64c9c3c9c54370227dccfc77d1befd0edc2a9128e1abb"
+  },
+  "derived": {}
+ },
+ "duckdb": "1.5.6",
+ "checks": {
+  "one row per user": true,
+  "every submitting user has a split": true,
+  "atcoder test share within 2 points": true,
+  "atcoder train share within 2 points": true,
+  "atcoder val share within 2 points": true,
+  "codeforces test share within 2 points": true,
+  "codeforces train share within 2 points": true,
+  "codeforces val share within 2 points": true,
+  "codenet test share within 2 points": true,
+  "codenet train share within 2 points": true,
+  "codenet val share within 2 points": true
+ },
+ "counts": {
+  "users_by_split": {
+   "atcoder/test": 4710,
+   "atcoder/train": 21664,
+   "atcoder/val": 4539,
+   "codeforces/test": 1459,
+   "codeforces/train": 6939,
+   "codeforces/val": 1444,
+   "codenet/test": 23086,
+   "codenet/train": 108092,
+   "codenet/val": 23000
+  },
+  "users_with_code_by_split": {
+   "codeforces/test": 594,
+   "codeforces/train": 2636,
+   "codeforces/val": 521,
+   "codenet/test": 3129,
+   "codenet/train": 14412,
+   "codenet/val": 3144
+  }
+ }
+}

@@ -1,0 +1,55 @@
+{
+ "snapshot": "codeforces_api_rated_list/acq-2026-10-07",
+ "source": "codeforces_api_rated_list",
+ "class": "as_received_projection",
+ "complete": true,
+ "upstream": {
+  "name": "Codeforces API user.ratedList",
+  "url": "https://codeforces.com/api/user.ratedList?activeOnly=false&includeRetired=true",
+  "revision": "live API",
+  "license": "Codeforces terms; API use permitted"
+ },
+ "method": "one HTTP GET; response parsed and every user object reduced to the kept fields; values unchanged",
+ "retrieved_at": "2026-10-07T15:07:05Z",
+ "projection": {
+  "kept_fields": [
+   "handle",
+   "rating",
+   "maxRating",
+   "rank",
+   "maxRank",
+   "registrationTimeSeconds",
+   "lastOnlineTimeSeconds"
+  ],
+  "dropped_fields": [
+   "avatar",
+   "city",
+   "contribution",
+   "country",
+   "email",
+   "firstName",
+   "friendOfCount",
+   "lastName",
+   "openId",
+   "organization",
+   "titlePhoto",
+   "vkId"
+  ],
+  "reason": "personal data (names, city, country, organisation, photos) is not needed by any lane",
+  "original_response_sha256": "70450f5c9b9176c6e27f6e49fafc47426b7fade7e6f8d881c307da3b9b5d31b6",
+  "original_response_bytes": 348471236,
+  "n_users": 980102
+ },
+ "notes": [
+  "Contains Codeforces handles in clear (as served). Canonical stores salted hashes only."
+ ],
+ "n_files": 1,
+ "total_bytes": 22605971,
+ "files": [
+  {
+   "path": "user.ratedList.projected.json.gz",
+   "bytes": 22605971,
+   "sha256": "4abdeedecc9dad67e9d23437f257ed731bbd6be8985d604100ae0bf3243c0e65"
+  }
+ ]
+}

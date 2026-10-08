@@ -1,0 +1,25 @@
+{
+ "method": "b1_jplag_in_corpus",
+ "split": "test",
+ "final": true,
+ "at": "20261008-194507",
+ "frame": "data/derived/eval_frame/v1",
+ "frame_recipe_sha256": "bdd45b88c3f6c6970a3086ed26238ca1d7c8495e0f6aacb214586f4127cca76b",
+ "script": "src/baselines/b1_jplag.py",
+ "script_sha256": "8c2b590b4cf9c775f6c54c8ac8376ad377997673d573118bf0d9d0181a69b763",
+ "params": {
+  "tool": "JPlag 6.2.0",
+  "args": "-l cpp -M RUN --normalize --cluster-skip --csv-export -n -1 -old <refs>",
+  "similarity": "averageSimilarity",
+  "score": "max over references",
+  "references": "other users' accepted C++ code on the same problem",
+  "ref_cap": 300,
+  "ref_choice": "every donor original + lowest sha256 up to the cap",
+  "input": "D3 expanded",
+  "max_file_bytes": 100000,
+  "variant": "source of a copy is among the references"
+ },
+ "n_fit_users": 0,
+ "previous_test_runs_of_this_method": 0,
+ "notes": "rp4 baseline; 0 problems JPlag could not process: []; 15 problems not run (stopped early; their rows score NaN): ['codeforces:922B', 'codenet:p04030', 'codenet:p04031', 'codenet:p04032', 'codenet:p04033', 'codenet:p04034', 'codenet:p04035', 'codenet:p04039', 'codenet:p04043', 'codenet:p04044', 'codenet:p04045', 'codenet:p04046', 'codenet:p04047', 'codenet:p04048', 'codenet:p04049']"
+}

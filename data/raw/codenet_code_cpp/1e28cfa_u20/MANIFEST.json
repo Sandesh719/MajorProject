@@ -1,0 +1,107 @@
+{
+ "snapshot": "codenet_code_cpp/1e28cfa_u20",
+ "source": "codenet_code_cpp",
+ "class": "as_received_subset",
+ "complete": true,
+ "upstream": {
+  "name": "Project CodeNet source code, C++ config of the iNeil77/CodeNet HF mirror",
+  "url": "https://huggingface.co/datasets/iNeil77/CodeNet",
+  "revision": "1e28cfa9f8eb2df763ad2514af11afd6e92dd07a",
+  "license": "mirror declares none; upstream IBM CodeNet license UNVERIFIED (commonly cited CDLA-Permissive-2.0)"
+ },
+ "retrieved_at": "2026-10-07",
+ "method": "rows of the parent snapshot selected by the user rule and rewritten as parquet; every column and value unchanged (all VARCHAR, as upstream)",
+ "subset_of": {
+  "snapshot": "codenet_code_cpp/1e28cfa",
+  "manifest_sha256": "ee94b92a01980638bd0435eab5b3f7b8897d7d6a224c571bfb5b755471e6b5f3"
+ },
+ "scope": {
+  "rule": "keep every row of user u iff sha256(u)[:8] (hex) < frac * 16^8",
+  "column": "u_id",
+  "frac": 0.2,
+  "threshold_hex": "33333333"
+ },
+ "notes": [
+  "Mirror used instead of the IBM archive because the IBM host served ~0.1 MB/s.",
+  "Mirror ids are IBM's (s_/p_/u_ prefixes); column names s_id/p_id/u_id instead of submission_id/problem_id/user_id; all columns VARCHAR.",
+  "Missing vs IBM: 25,903 of 8,008,527 C++ rows (0.32%), 237 of 102,866 users."
+ ],
+ "parent_verification": {
+  "mirror_rows": 7982624,
+  "mirror_duplicate_ids": 0,
+  "mirror_rows_not_in_ibm": 0,
+  "ibm_cpp_rows": 8008527,
+  "ibm_cpp_rows_missing_from_mirror": 25903,
+  "ibm_cpp_users": 102866,
+  "ibm_cpp_users_missing_from_mirror": 237,
+  "field_mismatches": {
+   "p_id": 0,
+   "u_id": 0,
+   "date": 0,
+   "original_language": 0,
+   "filename_ext": 0,
+   "status": 0,
+   "cpu_time": 299776,
+   "memory": 299776,
+   "code_size": 0
+  },
+  "code_null": 0,
+  "code_bytes_ne_code_size": 0,
+  "code_size_diff_top": [],
+  "field_mismatches_explained": "cpu_time/memory: all 299,776 are '' in the mirror vs empty (NULL) in IBM CSV, on rows with no run (Compile Error 299,596, judge errors 179, 1 WA). No value disagrees.",
+  "verified_at": "2026-10-07",
+  "script": "src/verify_codenet_mirror.py"
+ },
+ "verification": {
+  "rows_expected": 1652872,
+  "rows_written": 1652872,
+  "rows_in_subset_not_in_parent": 0,
+  "rows_in_parent_sample_not_in_subset": 0,
+  "users": 20685,
+  "ok": true
+ },
+ "n_files": 8,
+ "total_bytes": 331148449,
+ "files": [
+  {
+   "path": "C++/part-0.parquet",
+   "bytes": 45539377,
+   "sha256": "bb930d066c4cdec502cc98cbcb57a532fd582dd7705f9b0ef33ee4eb8ba6c9d6"
+  },
+  {
+   "path": "C++/part-1.parquet",
+   "bytes": 41271925,
+   "sha256": "ce4c224caef38bba1e652120f5566ad900973ec6eb9f330846255cebd8d56438"
+  },
+  {
+   "path": "C++/part-2.parquet",
+   "bytes": 38293239,
+   "sha256": "318c610e26857bfa90d94a044029b7720c7e235f726995136307f41232ec16d2"
+  },
+  {
+   "path": "C++/part-3.parquet",
+   "bytes": 38891058,
+   "sha256": "f134c3d0240cac96a37da8a79135209e8f84d8232eecf0084d27ffcd6ed8e719"
+  },
+  {
+   "path": "C++/part-4.parquet",
+   "bytes": 44177542,
+   "sha256": "8cd357c08fa686c8fec58549913ccf9429d8bc5d1852c156416733503caa2330"
+  },
+  {
+   "path": "C++/part-5.parquet",
+   "bytes": 43431494,
+   "sha256": "7d5d3a660cf718502e88bd04b70023bf1f8d5269ee8dc5e40a7c0cf7a752baa2"
+  },
+  {
+   "path": "C++/part-6.parquet",
+   "bytes": 39700902,
+   "sha256": "97b964c5ff62073662d4372de1dfc0857051d1f18d4ce56d108bb0e18334db89"
+  },
+  {
+   "path": "C++/part-7.parquet",
+   "bytes": 39842912,
+   "sha256": "ae0186222e4bc764dab0cd26c6e057b7dcf33cc5d2bd5559f37ed57963a8b352"
+  }
+ ]
+}

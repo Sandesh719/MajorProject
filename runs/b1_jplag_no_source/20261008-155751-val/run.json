@@ -1,0 +1,25 @@
+{
+ "method": "b1_jplag_no_source",
+ "split": "val",
+ "final": false,
+ "at": "20261008-155751",
+ "frame": "data/derived/eval_frame/v1",
+ "frame_recipe_sha256": "bdd45b88c3f6c6970a3086ed26238ca1d7c8495e0f6aacb214586f4127cca76b",
+ "script": "src/baselines/b1_jplag.py",
+ "script_sha256": "79fc8742c7a1638d3c934e2df0da391f48599638d3a4874bda24e174fda1afd5",
+ "params": {
+  "tool": "JPlag 6.2.0",
+  "args": "-l cpp -M RUN --normalize --cluster-skip --csv-export -n -1 -old <refs>",
+  "similarity": "averageSimilarity",
+  "score": "max over references",
+  "references": "other users' accepted C++ code on the same problem",
+  "ref_cap": 300,
+  "ref_choice": "every donor original + lowest sha256 up to the cap",
+  "input": "D3 expanded",
+  "max_file_bytes": 100000,
+  "variant": "every reference byte-identical to the scored code removed"
+ },
+ "n_fit_users": 0,
+ "previous_test_runs_of_this_method": 0,
+ "notes": "rp4 baseline; 1 problems JPlag could not process: ['codeforces:922B']"
+}

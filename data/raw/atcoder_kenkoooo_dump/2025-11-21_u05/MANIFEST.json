@@ -1,0 +1,45 @@
+{
+ "snapshot": "atcoder_kenkoooo_dump/2025-11-21_u05",
+ "source": "atcoder_kenkoooo_dump",
+ "class": "as_received_subset",
+ "complete": true,
+ "upstream": {
+  "name": "AtCoder Problems (kenkoooo) full submissions dump",
+  "url": "https://s3-ap-northeast-1.amazonaws.com/kenkoooo/submissions.csv.gz",
+  "revision": "Last-Modified Fri, 21 Nov 2025 11:01:10 GMT; ETag a475cd1985e0d85ab48b16b9f9f7df85-192; 1,603,172,550 bytes",
+  "license": "not stated; AtCoder Problems API docs ask for >1 s between accesses"
+ },
+ "retrieved_at": "2026-10-07",
+ "method": "parent CSV streamed; the header and every line of a sampled user copied byte for byte; re-gzipped (mtime 0)",
+ "subset_of": {
+  "snapshot": "atcoder_kenkoooo_dump/2025-11-21",
+  "manifest_sha256": "4b46cc984cf00250b7728022fd25b7f9016d3b77cc4ea68c37d4151b49b4e413"
+ },
+ "scope": {
+  "rule": "keep every row of user u iff sha256(u)[:8] (hex) < frac * 16^8",
+  "column": "user_id",
+  "frac": 0.05,
+  "threshold_hex": "0ccccccc"
+ },
+ "notes": [
+  "Metadata only — no source code. Every AtCoder user, not a sample.",
+  "Upstream had not been refreshed for ~10.5 months at retrieval; nothing after 2025-11-21. For later activity of 7,586 users see _legacy_2026-10/atcoder (reshaped-free rows, selected users)."
+ ],
+ "verification": {
+  "parent_rows": 68286717,
+  "rows_kept": 3275403,
+  "rows_expected_by_sql": 3275403,
+  "rows_in_subset_not_in_parent": 0,
+  "users": 30913,
+  "ok": true
+ },
+ "n_files": 1,
+ "total_bytes": 76436856,
+ "files": [
+  {
+   "path": "submissions.csv.gz",
+   "bytes": 76436856,
+   "sha256": "4206261e09cf33463d45ccbac2ff83e048711a45ee5a4e15edd752244d771e78"
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+# ---------------------------------------------------------------- never commit
+# Salt for hashing user handles. Publishing it makes every hashed user id reversible.
+.secrets/
+
+# ---------------------------------------------------------------- environment / OS / tools
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+.duckdb_tmp/
+*.tmp
+*.duckdb
+*.duckdb.wal
+
+# ---------------------------------------------------------------- data (~4 GB; rebuilt from sources, see data/README.md)
+# Raw data is third-party (CodeNet, AtCoder, Codeforces, open-r1, AICD, AIGCodeSet) under its own licenses and,
+# for AtCoder/Codeforces, contains user handles. Commit the provenance, not the data:
+data/raw/**
+!data/raw/
+!data/raw/*/
+!data/raw/*/*/
+!data/raw/*/*/MANIFEST.json
+!data/raw/_retired_manifests/
+!data/raw/_retired_manifests/*.json
+# ...except manifests that list files named after Codeforces handles
+data/raw/codeforces_api_user_status/**
+data/raw/_retired_manifests/*_provenance.jsonl
+
+# Canonical and derived data are rebuilt by src/; keep only their build records and recipes
+data/canonical/**
+!data/canonical/
+!data/canonical/_builds/
+!data/canonical/_builds/*.json
+data/derived/**
+!data/derived/
+!data/derived/*/
+!data/derived/*/v*/
+!data/derived/*/v*/recipe.json
+data/derived/_staging/
+data/derived/*/_cache*/
+
+# ---------------------------------------------------------------- results
+# Per-run scores, metrics and run records are small and back docs/RESULTS.md; tool caches are not
+runs/_work/
+
+# ---------------------------------------------------------------- logs and the archived first attempt
+logs/
+backup/

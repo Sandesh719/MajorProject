@@ -1,0 +1,42 @@
+corpus,verdict_raw,verdict,accepted
+codenet,Accepted,AC,true
+codenet,Wrong Answer,WA,false
+codenet,WA: Presentation Error,PE,false
+codenet,Runtime Error,RE,false
+codenet,Time Limit Exceeded,TLE,false
+codenet,Memory Limit Exceeded,MLE,false
+codenet,Output Limit Exceeded,OLE,false
+codenet,Compile Error,CE,false
+codenet,Query Limit Exceeded,OTHER,false
+codenet,Judge Not Available,JUDGE_ERROR,false
+codenet,Internal error,JUDGE_ERROR,false
+codenet,Judge System Error,JUDGE_ERROR,false
+atcoder,AC,AC,true
+atcoder,WA,WA,false
+atcoder,RE,RE,false
+atcoder,TLE,TLE,false
+atcoder,CE,CE,false
+atcoder,MLE,MLE,false
+atcoder,OLE,OLE,false
+atcoder,QLE,OTHER,false
+atcoder,NG,OTHER,false
+atcoder,IE,JUDGE_ERROR,false
+atcoder,WJ,PENDING,false
+atcoder,WR,PENDING,false
+codeforces,OK,AC,true
+codeforces,WRONG_ANSWER,WA,false
+codeforces,PRESENTATION_ERROR,PE,false
+codeforces,RUNTIME_ERROR,RE,false
+codeforces,TIME_LIMIT_EXCEEDED,TLE,false
+codeforces,MEMORY_LIMIT_EXCEEDED,MLE,false
+codeforces,IDLENESS_LIMIT_EXCEEDED,OTHER,false
+codeforces,COMPILATION_ERROR,CE,false
+codeforces,SECURITY_VIOLATED,OTHER,false
+codeforces,CHALLENGED,OTHER,false
+codeforces,SKIPPED,OTHER,false
+codeforces,REJECTED,OTHER,false
+codeforces,PARTIAL,PARTIAL,false
+codeforces,CRASHED,JUDGE_ERROR,false
+codeforces,INPUT_PREPARATION_CRASHED,JUDGE_ERROR,false
+codeforces,FAILED,JUDGE_ERROR,false
+codeforces,TESTING,PENDING,false

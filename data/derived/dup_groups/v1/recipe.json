@@ -1,0 +1,40 @@
+{
+ "name": "dup_groups",
+ "version": 1,
+ "built_at": "2026-10-08T03:44:04+00:00",
+ "script": "src/derived/dup_groups.py",
+ "script_sha256": "afd583b52ed979a91cb6b5b71b167e7ba699d890f490eabf084dbf7a0d4b405e",
+ "params": {
+  "shingle": "5-grams of D3 token types",
+  "minhash_perms": 64,
+  "lsh": "8 bands x 8 rows",
+  "min_jaccard": 0.8,
+  "scope": "within a problem, accepted submissions with code",
+  "seed": 20261008,
+  "shingle_hash": "Python hash() with PYTHONHASHSEED=0",
+  "chunks": 32
+ },
+ "is_synthetic": false,
+ "inputs": {
+  "canonical_builds": {
+   "atcoder": "20963f1578adcc460c19eff17b7e92f85917e01e97397d64efc68d6ae1d51bd4",
+   "codeforces": "e5020b4cdb941ded7a70018e5a3e6ca8a8868b16a32c334db00fcd7b765528a9",
+   "codenet": "bf9f92c1dca5cb20bfc64c9c3c9c54370227dccfc77d1befd0edc2a9128e1abb"
+  },
+  "derived": {
+   "code_views/v2": "4efdf066a3c59ae836fec11cade5aaac8e61ac2fe9cbd42b946a733aa4a09b21"
+  }
+ },
+ "duckdb": "1.5.6",
+ "checks": {
+  "one row per accepted code submission": true,
+  "byte-identical files share a near cluster": true
+ },
+ "counts": {
+  "candidate_pairs": 3987114,
+  "kept_pairs_jaccard_ge_0.8": 2508930,
+  "submissions_in_exact_group_with_another_user": 4617,
+  "submissions_in_near_cluster_with_another_user": 125661,
+  "largest_near_cluster_users": 855
+ }
+}

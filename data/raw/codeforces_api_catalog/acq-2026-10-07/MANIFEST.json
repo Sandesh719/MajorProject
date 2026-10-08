@@ -1,0 +1,33 @@
+{
+ "snapshot": "codeforces_api_catalog/acq-2026-10-07",
+ "source": "codeforces_api_catalog",
+ "class": "as_received",
+ "complete": true,
+ "upstream": {
+  "name": "Codeforces API problemset.problems + contest.list",
+  "url": "https://codeforces.com/api/{problemset.problems,contest.list}",
+  "revision": "live, see retrieved_at",
+  "license": "Codeforces terms; API use permitted"
+ },
+ "method": "HTTP GET, 2.5 s apart; status == OK checked",
+ "retrieved_at": "2026-10-07",
+ "notes": [
+  "problemset.problems holds both `problems` (rating, tags) and `problemStatistics` (solvedCount), unmerged.",
+  "No statements or limits: those come from open-r1/codeforces if needed."
+ ],
+ "manifest_written_at": "2026-10-07T12:52:32+00:00",
+ "n_files": 2,
+ "total_bytes": 2679689,
+ "files": [
+  {
+   "path": "contest.list.json",
+   "bytes": 410306,
+   "sha256": "1a3541b17c490760e5f37daf9f227c0be7ef66ad452239aeba9eda7bd49b8c27"
+  },
+  {
+   "path": "problemset.problems.json",
+   "bytes": 2269383,
+   "sha256": "3c940ceaefe809354aed1a87e8c6ca0d4f0b1d669c9571aacce7647b1469910d"
+  }
+ ]
+}

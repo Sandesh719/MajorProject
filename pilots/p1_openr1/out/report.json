@@ -1,0 +1,40 @@
+{
+  "openr1_rows_in_contests": 161642,
+  "openr1_rows_found_in_api": 161642,
+  "field_agreement": {
+    "ts": 1.0,
+    "verdict": 1.0,
+    "lang": 1.0,
+    "time_ms": 1.0
+  },
+  "coverage_overall": {
+    "all_": 0.0308,
+    "ok": 0.0578,
+    "fail": 0.0103
+  },
+  "users_in_api": 781140,
+  "users_with_any_openr1_row": 64074,
+  "per_user_coverage_of_covered_users": {
+    "count": 64074.0,
+    "mean": 0.301,
+    "std": 0.259,
+    "min": 0.0,
+    "10%": 0.062,
+    "25%": 0.111,
+    "50%": 0.214,
+    "75%": 0.4,
+    "90%": 0.667,
+    "max": 1.0
+  },
+  "covered_users_with_any_failed_row": 15040,
+  "chains": {
+    "user_problem_pairs": 139926.0,
+    "multi_attempt": 10164.0,
+    "fail_then_ok_pairs": 6098.0
+  },
+  "chains_api": {
+    "user_problem_pairs": 2009492.0,
+    "multi_attempt": 986668.0,
+    "fail_then_ok_pairs": 850297.0
+  }
+}

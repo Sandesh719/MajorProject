@@ -1,0 +1,58 @@
+{
+ "snapshot": "aicd_bench/b7dc6d8",
+ "source": "aicd_bench",
+ "class": "as_received",
+ "complete": true,
+ "upstream": {
+  "name": "AICD Bench, task T1 only",
+  "url": "https://huggingface.co/datasets/AICD-bench/AICD-Bench",
+  "revision": "b7dc6d82257de6e0146d1e7b0831abd7088633af",
+  "license": "not declared on the dataset card (checked 2026-10-07)"
+ },
+ "method": "HTTP download of T1/*.parquet from resolve/main",
+ "retrieved_at": "2026-10-02",
+ "notes": [
+  "Downloaded unpinned; pinned retroactively on 2026-10-07: all 6 sha256 equal the LFS oids at the revision above.",
+  "Other tasks (T2, T3) not downloaded."
+ ],
+ "manifest_written_at": "2026-10-07T11:33:26+00:00",
+ "n_files": 6,
+ "total_bytes": 905874814,
+ "files": [
+  {
+   "path": "T1/test-00000-of-00004.parquet",
+   "bytes": 146747921,
+   "sha256": "b50cd84eb6d7c237b2556079b4b7bbe85fc2b813398e41ac64e71a18becda422"
+  },
+  {
+   "path": "T1/test-00001-of-00004.parquet",
+   "bytes": 171261075,
+   "sha256": "5812f62193bf1d48b38b9d2d5e1103f9352e7b3b72dc407eede94ab308c594c6"
+  },
+  {
+   "path": "T1/test-00002-of-00004.parquet",
+   "bytes": 187853467,
+   "sha256": "45dffb860e3ac3014c67ab05a641ab90c1877eabd5379964b0ccaf2877794a21"
+  },
+  {
+   "path": "T1/test-00003-of-00004.parquet",
+   "bytes": 152207839,
+   "sha256": "1f6d560d36f4892f2a3b7dc41e0dc99ff367ebf61a746fa34f5d7d265a727a34"
+  },
+  {
+   "path": "T1/train-00000-of-00001.parquet",
+   "bytes": 206546224,
+   "sha256": "be70ca1129236ab9c3a997aa62ad62cbb9a43a4aa68497be1d317618615ce58e"
+  },
+  {
+   "path": "T1/validation-00000-of-00001.parquet",
+   "bytes": 41258288,
+   "sha256": "f9fa5a44a44f262fd4639efe6d16f4f40372c72720ac4c6fe7983644f434c2aa"
+  }
+ ],
+ "retired": {
+  "replaced_by": [
+   "aicd_bench/b7dc6d8_trainval"
+  ]
+ }
+}

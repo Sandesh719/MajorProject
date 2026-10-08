@@ -1,0 +1,42 @@
+{
+ "snapshot": "atcoder_kenkoooo_resources/acq-2026-10-07",
+ "source": "atcoder_kenkoooo_resources",
+ "class": "as_received",
+ "complete": true,
+ "upstream": {
+  "name": "AtCoder Problems resources",
+  "url": "https://kenkoooo.com/atcoder/resources/{problems,problem-models,contests,contest-problem}.json",
+  "revision": "live, see retrieved_at",
+  "license": "not stated"
+ },
+ "method": "HTTP GET of each file, 1.5 s apart; each parsed as JSON to confirm completeness",
+ "retrieved_at": "2026-10-07",
+ "notes": [
+  "problem-models.json holds the fitted IRT difficulty/discrimination per problem."
+ ],
+ "manifest_written_at": "2026-10-07T12:52:25+00:00",
+ "n_files": 4,
+ "total_bytes": 6606752,
+ "files": [
+  {
+   "path": "contest-problem.json",
+   "bytes": 3191797,
+   "sha256": "4c718c346739ec1504bd7916cf0c2ab52e85cdd1a0b391bf924be6f52025e2bb"
+  },
+  {
+   "path": "contests.json",
+   "bytes": 1038183,
+   "sha256": "7650e43ebfb21f0159e021239232139bad69accd06406a3187521d1760eb3ccb"
+  },
+  {
+   "path": "problem-models.json",
+   "bytes": 1159865,
+   "sha256": "1d64f5b113a008d1afb5e5c9c7578339456591acb8c4d04cae8770e6fea7b695"
+  },
+  {
+   "path": "problems.json",
+   "bytes": 1216907,
+   "sha256": "2e184899fd47fbcac00541265be92b53f07d75c100a53364ec8370c1b7a864d0"
+  }
+ ]
+}

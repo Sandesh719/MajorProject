@@ -1,0 +1,175 @@
+{
+ "snapshot": "codenet_code_cpp/1e28cfa",
+ "source": "codenet_code_cpp",
+ "class": "as_received",
+ "complete": true,
+ "upstream": {
+  "name": "Project CodeNet source code, C++ config of the iNeil77/CodeNet HF mirror",
+  "url": "https://huggingface.co/datasets/iNeil77/CodeNet",
+  "revision": "1e28cfa9f8eb2df763ad2514af11afd6e92dd07a",
+  "license": "mirror declares none; upstream IBM CodeNet license UNVERIFIED (commonly cited CDLA-Permissive-2.0)"
+ },
+ "method": "HTTP download of C++/*.parquet from resolve/<revision>; each file's sha256 checked against the LFS oid (24/24 matched)",
+ "retrieved_at": "2026-10-07",
+ "notes": [
+  "Mirror used instead of the IBM archive because the IBM host served ~0.1 MB/s.",
+  "Mirror ids are IBM's (s_/p_/u_ prefixes); column names s_id/p_id/u_id instead of submission_id/problem_id/user_id; all columns VARCHAR.",
+  "Missing vs IBM: 25,903 of 8,008,527 C++ rows (0.32%), 237 of 102,866 users."
+ ],
+ "verification": {
+  "mirror_rows": 7982624,
+  "mirror_duplicate_ids": 0,
+  "mirror_rows_not_in_ibm": 0,
+  "ibm_cpp_rows": 8008527,
+  "ibm_cpp_rows_missing_from_mirror": 25903,
+  "ibm_cpp_users": 102866,
+  "ibm_cpp_users_missing_from_mirror": 237,
+  "field_mismatches": {
+   "p_id": 0,
+   "u_id": 0,
+   "date": 0,
+   "original_language": 0,
+   "filename_ext": 0,
+   "status": 0,
+   "cpu_time": 299776,
+   "memory": 299776,
+   "code_size": 0
+  },
+  "code_null": 0,
+  "code_bytes_ne_code_size": 0,
+  "code_size_diff_top": [],
+  "field_mismatches_explained": "cpu_time/memory: all 299,776 are '' in the mirror vs empty (NULL) in IBM CSV, on rows with no run (Compile Error 299,596, judge errors 179, 1 WA). No value disagrees.",
+  "verified_at": "2026-10-07",
+  "script": "src/verify_codenet_mirror.py"
+ },
+ "manifest_written_at": "2026-10-07T11:41:34+00:00",
+ "n_files": 24,
+ "total_bytes": 3719936687,
+ "files": [
+  {
+   "path": "C++/train-00000-of-00024.parquet",
+   "bytes": 97735083,
+   "sha256": "94e3fd8df4cb546184cbfb92df56ffc5171df9f29af8b1bc78676d841571f3ca"
+  },
+  {
+   "path": "C++/train-00001-of-00024.parquet",
+   "bytes": 159986690,
+   "sha256": "b08e2608b3b56a60a02961ec7b5edd9a972a95fb0c0c929e9d2fc46fb105cb33"
+  },
+  {
+   "path": "C++/train-00002-of-00024.parquet",
+   "bytes": 103053254,
+   "sha256": "e03342b6ba9ecbc7e2238aef9fa3c74243a70d498841a12bfe26878fff995a71"
+  },
+  {
+   "path": "C++/train-00003-of-00024.parquet",
+   "bytes": 224715711,
+   "sha256": "6743a1d0a2ea380843973bd7918b0c1c2290a6406f5c84b36047128cf95d2b95"
+  },
+  {
+   "path": "C++/train-00004-of-00024.parquet",
+   "bytes": 208715503,
+   "sha256": "f4bd0bfa28b7b3ce94730bdc12eabe255fd05a6bd0077cb335d2bd7dded1c3f5"
+  },
+  {
+   "path": "C++/train-00005-of-00024.parquet",
+   "bytes": 188158367,
+   "sha256": "5273d1abfea8fc8016d155e86b29ed4628378091d2304526f3c97a3ef4c0fbee"
+  },
+  {
+   "path": "C++/train-00006-of-00024.parquet",
+   "bytes": 162342740,
+   "sha256": "17d4f8c6386fcc1bcef4e52bbc41c8de37e264652f0d444c17160946cecfd515"
+  },
+  {
+   "path": "C++/train-00007-of-00024.parquet",
+   "bytes": 167165036,
+   "sha256": "fefb0dccecc9cff030702878199ac1267754927a24b733302660f52334ca1a76"
+  },
+  {
+   "path": "C++/train-00008-of-00024.parquet",
+   "bytes": 171720360,
+   "sha256": "5b9eca8c7dbdee7c968969a3fae65318d5601de43c9a8cd0fec98cd69b81a85a"
+  },
+  {
+   "path": "C++/train-00009-of-00024.parquet",
+   "bytes": 193195539,
+   "sha256": "4821b35abdb973651e71685344021734ed93ca497213c6d7df1b8574caea5eb3"
+  },
+  {
+   "path": "C++/train-00010-of-00024.parquet",
+   "bytes": 179220520,
+   "sha256": "7d257184c50f60accc72cb596a556b178dd8aab389b00c865039c822131d7ace"
+  },
+  {
+   "path": "C++/train-00011-of-00024.parquet",
+   "bytes": 172901244,
+   "sha256": "7e251c41e2caee413a442d1a4bf1f65be3fe5fffa9777cad67f78652b8fd4cbd"
+  },
+  {
+   "path": "C++/train-00012-of-00024.parquet",
+   "bytes": 165339708,
+   "sha256": "114d6eda1a6f023445825d1b7dcf2fd52327406ab4a34b586a193910eac7bd8f"
+  },
+  {
+   "path": "C++/train-00013-of-00024.parquet",
+   "bytes": 153297414,
+   "sha256": "d80477fb03b24a3f9b17b1feb8d66c3a55fcb6f9cb216cd9bc01bab1854b6e4d"
+  },
+  {
+   "path": "C++/train-00014-of-00024.parquet",
+   "bytes": 143207283,
+   "sha256": "c07eb5fb68a84007077d2264ec7ace8b5073c6612db90ce63e33512f6de604e2"
+  },
+  {
+   "path": "C++/train-00015-of-00024.parquet",
+   "bytes": 163256260,
+   "sha256": "a34ca5d5802d122cffad9551cb4a915d4f27d4269e1978fc94be06a6b96b9954"
+  },
+  {
+   "path": "C++/train-00016-of-00024.parquet",
+   "bytes": 133620491,
+   "sha256": "3eb6d90f31db6be660aad386ac2b0aed5761b4086e9f1b12095044b20bd79a2b"
+  },
+  {
+   "path": "C++/train-00017-of-00024.parquet",
+   "bytes": 136874058,
+   "sha256": "b09b1b5a30b300475ac028ce61471533492706665a220a45aff2c6086e7dce53"
+  },
+  {
+   "path": "C++/train-00018-of-00024.parquet",
+   "bytes": 123008865,
+   "sha256": "21ac8bb5215346110c12c80ceb910bbf8a330c0028bf70a7a6e819d6d7418790"
+  },
+  {
+   "path": "C++/train-00019-of-00024.parquet",
+   "bytes": 124081798,
+   "sha256": "20013fed7ae179afe1c8c9963fcdf131da5c5da0d39b62300690cf3fc85ba55b"
+  },
+  {
+   "path": "C++/train-00020-of-00024.parquet",
+   "bytes": 135872002,
+   "sha256": "a63456ad7f5ad7c8a1900c5aa1e9258040ba23c5a549877f0fef25efbdba49ec"
+  },
+  {
+   "path": "C++/train-00021-of-00024.parquet",
+   "bytes": 139455949,
+   "sha256": "3e118e78c7b7d36a7845d0556a644156564163d9621aeac0e8f9889641787ad9"
+  },
+  {
+   "path": "C++/train-00022-of-00024.parquet",
+   "bytes": 135987565,
+   "sha256": "e1974f7a120cf05d65843e6c41cd8bad800f01ed0f9f50f75466ab5ae3d1f07a"
+  },
+  {
+   "path": "C++/train-00023-of-00024.parquet",
+   "bytes": 137025247,
+   "sha256": "c627f99456f7089af9e365d0a981eb30c867fac37c78a7bd907b18f3161698de"
+  }
+ ],
+ "retired": {
+  "replaced_by": [
+   "codenet_code_cpp/1e28cfa_u20"
+  ]
+ }
+}

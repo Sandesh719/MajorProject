@@ -1,0 +1,52 @@
+{
+ "method": "b2_rp2_ai_detector",
+ "split": "test",
+ "final": true,
+ "at": "20261008-135845",
+ "frame": "data/derived/eval_frame/v1",
+ "frame_recipe_sha256": "bdd45b88c3f6c6970a3086ed26238ca1d7c8495e0f6aacb214586f4127cca76b",
+ "script": "src/baselines/b2_rp2_stylometry.py",
+ "script_sha256": "af83d78819952b105455ac76344ba7b075cc4bebc08741da533994702812a7f1",
+ "params": {
+  "paper": "rp2 Santhanam et al. 2026",
+  "tfidf": {
+   "analyzer": "char",
+   "ngram_range": [
+    3,
+    5
+   ],
+   "max_features": 120000,
+   "min_df": 5
+  },
+  "structural": [
+   "length",
+   "lines",
+   "comment_ratio",
+   "digit_ratio",
+   "punct_ratio",
+   "unique_chars"
+  ],
+  "kmeans": {
+   "type": "MiniBatchKMeans",
+   "k": 4
+  },
+  "lr": {
+   "penalty": "l2",
+   "max_iter": 3000
+  },
+  "nb": {
+   "alpha": 0.5
+  },
+  "n_train": 80000,
+  "seed": 42,
+  "threshold_scan": [
+   0.7,
+   0.99
+  ],
+  "data": "AICD T1 train (fit), validation halves (calibrate / held-out)",
+  "nb_input": "TF-IDF + min-max structural"
+ },
+ "n_fit_users": 0,
+ "previous_test_runs_of_this_method": 0,
+ "notes": "rp2 reproduction; threshold 0.7; score = P(AI)"
+}

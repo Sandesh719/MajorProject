@@ -1,0 +1,53 @@
+{
+ "name": "profiles",
+ "version": 1,
+ "built_at": "2026-10-08T03:58:12+00:00",
+ "script": "src/derived/profiles.py",
+ "script_sha256": "765436c10e6e7f3657d6f4796243cfc972651824041e371589eb954b13ce9288",
+ "params": {
+  "min_prior_ac_with_code": 10,
+  "window": "over (partition by user_uid order by ts_unix range between unbounded preceding and 1 preceding)",
+  "style": "mean and sample std of every D4 feature",
+  "skill": [
+   "prior_n_attempted",
+   "prior_n_solved",
+   "prior_first_try_rate",
+   "prior_mean_b_solved",
+   "prior_max_b_solved",
+   "prior_days_active",
+   "days_since_prev_ac"
+  ],
+  "skill_attempted": "first attempt on a problem",
+  "skill_solved": "first accepted submission on a problem",
+  "difficulty": "D5 b (NULL when the problem has no b)"
+ },
+ "is_synthetic": false,
+ "inputs": {
+  "canonical_builds": {
+   "atcoder": "20963f1578adcc460c19eff17b7e92f85917e01e97397d64efc68d6ae1d51bd4",
+   "codeforces": "e5020b4cdb941ded7a70018e5a3e6ca8a8868b16a32c334db00fcd7b765528a9",
+   "codenet": "bf9f92c1dca5cb20bfc64c9c3c9c54370227dccfc77d1befd0edc2a9128e1abb"
+  },
+  "derived": {
+   "attempts/v1": "fd8680b1f8ab2a0844319ba0410e42c55d1afcf8183c5ed2ee2469abc493ac55",
+   "code_features/v1": "ad53c2eac0bfc0d2f30e0060e097707f334f749785440a646476eae4fa7b6e42",
+   "problem_difficulty/v2": "46b83479d9cc8b553bcf14c2b8952eb24fda7b5252e9d3f921ebf0f1c670a694",
+   "positives_p1/v2": "7b05f3e04661c843e36885d764645c8a382f969c00d67d225da2086814234cd4"
+  }
+ },
+ "duckdb": "1.5.6",
+ "checks": {
+  "one row per eligible submission": true,
+  "every profile has >= 10 strictly earlier accepted submissions with code": true,
+  "n_lines_mean equals a recomputation from strictly earlier rows": true,
+  "D10 targets all have a profile": true
+ },
+ "counts": {
+  "profiles_by_corpus": {
+   "codenet": 762241,
+   "codeforces": 80041
+  },
+  "users": 10309,
+  "median_prior_n_code": 114.0
+ }
+}

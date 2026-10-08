@@ -1,0 +1,11 @@
+priority,pattern,lang_family
+1,(C\+\+|G\+\+|Clang\+\+),C++
+2,^(Python|PyPy|Cython),Python
+3,^Java( |[0-9]|$),Java
+4,^(C#|C Sharp|Mono C#|MS C#|\.NET),C#
+5,^(C|GNU C[0-9]*|GNU C11)( |$),C
+6,^(GNU C)[0-9]+,C
+7,^(Kotlin),Kotlin
+8,^(Rust),Rust
+9,^(Go)( |$),Go
+10,^(Free Pascal|Delphi|PascalABC|Pascal),Pascal

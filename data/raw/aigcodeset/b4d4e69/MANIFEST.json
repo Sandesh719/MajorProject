@@ -1,0 +1,33 @@
+{
+ "snapshot": "aigcodeset/b4d4e69",
+ "source": "aigcodeset",
+ "class": "as_received",
+ "complete": true,
+ "upstream": {
+  "name": "AIGCodeSet (rp1)",
+  "url": "https://huggingface.co/datasets/basakdemirok/AIGCodeSet",
+  "revision": "b4d4e69fdbcba2608c99808c6afbf53a3bfd108c",
+  "license": "cdla-permissive-2.0 (dataset card)"
+ },
+ "method": "HTTP download of data/created_dataset_with_llms.csv and data/human_selected_dataset.csv",
+ "retrieved_at": "2026-10-02",
+ "notes": [
+  "Pinned retroactively on 2026-10-07: git blob hashes equal the revision above.",
+  "Not downloaded: data/all_data_with_ada_embeddings_will_be_splitted_into_train_test_set.csv (265 MB embeddings)."
+ ],
+ "manifest_written_at": "2026-10-07T11:33:26+00:00",
+ "n_files": 2,
+ "total_bytes": 4121591,
+ "files": [
+  {
+   "path": "data/created_dataset_with_llms.csv",
+   "bytes": 1330275,
+   "sha256": "be858efdb3233dff32b4cf239171dd686f9fb968d26cb0ab44c668fa40b2226e"
+  },
+  {
+   "path": "data/human_selected_dataset.csv",
+   "bytes": 2791316,
+   "sha256": "f02f1099de41434e67f26dd0470e8cce32ac1a80966cea51c8f9a25b95991de8"
+  }
+ ]
+}

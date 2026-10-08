@@ -1,0 +1,65 @@
+{
+ "name": "eval_frame",
+ "version": 1,
+ "built_at": "2026-10-08T08:37:51+00:00",
+ "script": "src/derived/eval_frame.py",
+ "script_sha256": "bba810311402b7026cc9b301c37202c5d24adb7fd6f1940953035be04ec3e43b",
+ "params": {
+  "kinds": [
+   "p1_neg",
+   "p1_pos",
+   "natural"
+  ],
+  "natural_per_user": 20,
+  "natural_from": "D7 profiles (eligible accepted C++ submissions), excluding D10 targets",
+  "natural_choice": "lowest sha256('natural:' || submission_uid) per user",
+  "difficulty_band": "tertiles of D5 b_pct within corpus: easy < 1/3 <= medium < 2/3 <= hard; else unknown"
+ },
+ "is_synthetic": true,
+ "inputs": {
+  "canonical_builds": {
+   "atcoder": "20963f1578adcc460c19eff17b7e92f85917e01e97397d64efc68d6ae1d51bd4",
+   "codeforces": "e5020b4cdb941ded7a70018e5a3e6ca8a8868b16a32c334db00fcd7b765528a9",
+   "codenet": "bf9f92c1dca5cb20bfc64c9c3c9c54370227dccfc77d1befd0edc2a9128e1abb"
+  },
+  "derived": {
+   "positives_p1/v2": "7b05f3e04661c843e36885d764645c8a382f969c00d67d225da2086814234cd4",
+   "profiles/v1": "13f459f8886b9dfdba3eb700164ba801fc68724dbba7a7c25ba76dcf7c7aa03a",
+   "splits/v1": "dcb8b2f4eae09168285d330471535f150447b3a8d718a30d630bc84730e7aa4f",
+   "problem_difficulty/v2": "46b83479d9cc8b553bcf14c2b8952eb24fda7b5252e9d3f921ebf0f1c670a694"
+  }
+ },
+ "duckdb": "1.5.6",
+ "checks": {
+  "row_id unique": true,
+  "every row has a split": true,
+  "labels match kinds": true,
+  "natural rows are never D10 targets": true,
+  "every pair is in one split": true,
+  "every row has code": true
+ },
+ "counts": {
+  "rows_by_split_kind": {
+   "test/natural": 20862,
+   "test/p1_neg": 7483,
+   "test/p1_pos": 7483,
+   "train/natural": 91878,
+   "train/p1_neg": 33063,
+   "train/p1_pos": 33063,
+   "val/natural": 18902,
+   "val/p1_neg": 6921,
+   "val/p1_pos": 6921
+  },
+  "users_by_split": {
+   "test": 1626,
+   "train": 7172,
+   "val": 1511
+  },
+  "difficulty_band": {
+   "easy": 101720,
+   "hard": 54152,
+   "medium": 69239,
+   "unknown": 1465
+  }
+ }
+}

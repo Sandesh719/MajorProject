@@ -1,0 +1,300 @@
+{
+ "snapshot": "raw/_legacy_2026-10",
+ "source": "_legacy",
+ "class": "reshaped_legacy",
+ "complete": true,
+ "upstream": {
+  "name": "Codeforces API user.status + problemset.problems; kenkoooo AtCoder Problems API",
+  "url": "https://codeforces.com/api ; https://kenkoooo.com/atcoder",
+  "revision": "live APIs, pulled 2026-10-02..2026-10-03",
+  "license": "platform terms"
+ },
+ "method": "backup/2026-10-06-v1/pullers/{cf_problems,cf_users,cf_submissions,atcoder}.py",
+ "retrieved_at": "2026-10-02/2026-10-03",
+ "notes": [
+  "NOT AS RECEIVED. Codeforces submissions were flattened (cf_submissions.py flatten()); both problem files merge two API responses; AtCoder submission rows are verbatim API objects but the user set is a selection.",
+  "handles.json / users.json / handles_report.json are sampling choices (600 handles per CF rating band; AtCoder heaviest users first).",
+  "MANIFEST_2026-10-03.json is the previous whole-tree integrity manifest (16-hex truncated hashes).",
+  "canonical/ must never read from here. Kept for reference and for the 3,784 CF users' practice histories."
+ ],
+ "manifest_written_at": "2026-10-07T11:33:27+00:00",
+ "n_files": 55,
+ "total_bytes": 539871754,
+ "files": [
+  {
+   "path": "MANIFEST_2026-10-03.json",
+   "bytes": 465406,
+   "sha256": "427302441de14990cfb69d1ed815573228dca54c73f3db26f6370c74121b37fc"
+  },
+  {
+   "path": "atcoder/problems.jsonl.gz",
+   "bytes": 196325,
+   "sha256": "ace7c6f8d4e35c845712f9cbde179e7f0b342eeb55346dff992bc5e81630b83d"
+  },
+  {
+   "path": "atcoder/submissions/_done.txt",
+   "bytes": 66113,
+   "sha256": "990b5fd816f24f4354c1c9b06f4aa60fe41b51c6ed0c447eaf33f6beaa64c690"
+  },
+  {
+   "path": "atcoder/submissions/part-0000.jsonl.gz",
+   "bytes": 66581390,
+   "sha256": "f2170514935d91a157c1b6f360fb265caddf1f21e15a45c71b106a73e9bda8f8"
+  },
+  {
+   "path": "atcoder/submissions/part-0001.jsonl.gz",
+   "bytes": 37055323,
+   "sha256": "10dc786e0066300a8801f735ae31916bd62f781aeb3d2d2baf885e31b4771b69"
+  },
+  {
+   "path": "atcoder/submissions/part-0002.jsonl.gz",
+   "bytes": 31004496,
+   "sha256": "40fc4d0c92a0f9ed94e05714d64dd0b2f05d009427adfed4b02f5b650cd68ae6"
+  },
+  {
+   "path": "atcoder/submissions/part-0003.jsonl.gz",
+   "bytes": 27585524,
+   "sha256": "167c9cdc56bd44def34624429983f439097e9adeaacd9817eae0a9d9d257f2c3"
+  },
+  {
+   "path": "atcoder/submissions/part-0004.jsonl.gz",
+   "bytes": 25071945,
+   "sha256": "1f1d1170421167fb1d2a8df774dd0a696836cb86ec734ab776c622ba88ea1f9a"
+  },
+  {
+   "path": "atcoder/submissions/part-0005.jsonl.gz",
+   "bytes": 21314000,
+   "sha256": "dcb76bf7108673b5feea916a1aa4aa03b11b444ba35d7f40e047266bd51f3f5b"
+  },
+  {
+   "path": "atcoder/submissions/part-0006.jsonl.gz",
+   "bytes": 20011256,
+   "sha256": "db136b6227b4f2d54e38a9b43f933ae38e4b83dbf22a7ecc3dfe83738ce727d5"
+  },
+  {
+   "path": "atcoder/submissions/part-0007.jsonl.gz",
+   "bytes": 18363062,
+   "sha256": "be3bc5f778bcd2b353a1f0c97c912eb9f6c81f4d88a00c01c0bfb4de5fdbb7ed"
+  },
+  {
+   "path": "atcoder/submissions/part-0008.jsonl.gz",
+   "bytes": 16923975,
+   "sha256": "bd611167fb88f0f2d5a9d83d016c7c98361628489b9e6bc129e0f45eed79a69c"
+  },
+  {
+   "path": "atcoder/submissions/part-0009.jsonl.gz",
+   "bytes": 16366980,
+   "sha256": "bf2c16e17e7cc37ca0518ad3b81f3ec2f9355b3d3ffb2043bde9c7440f53c101"
+  },
+  {
+   "path": "atcoder/submissions/part-0010.jsonl.gz",
+   "bytes": 15362659,
+   "sha256": "ef039394642be7c5362e7929c10776b36bcc80bb5ee109aa05508af392ea2ed5"
+  },
+  {
+   "path": "atcoder/submissions/part-0011.jsonl.gz",
+   "bytes": 14041655,
+   "sha256": "d70956d536e91c2e673670a104ff3c417d666fcabb313f6cd5cf6aaed3530f76"
+  },
+  {
+   "path": "atcoder/submissions/part-0012.jsonl.gz",
+   "bytes": 13675870,
+   "sha256": "02ba69f9aa57d7e1635564455da61f8307b106516362d90a1b24f7cdb19070e6"
+  },
+  {
+   "path": "atcoder/submissions/part-0013.jsonl.gz",
+   "bytes": 12842163,
+   "sha256": "d777514d07a90c3b80ea1cf12b8c2af4168b272620776c5d04b7c4842d95b8a7"
+  },
+  {
+   "path": "atcoder/submissions/part-0014.jsonl.gz",
+   "bytes": 12158275,
+   "sha256": "2f858654bd82568df7ee88f1764a4e0fded84f9691763cec614c4cde4c058fe0"
+  },
+  {
+   "path": "atcoder/submissions/part-0015.jsonl.gz",
+   "bytes": 11538982,
+   "sha256": "761d19942d3304eef1b13586042ca9d0c6757ad3e8237520b7b80fbd0b3e9417"
+  },
+  {
+   "path": "atcoder/submissions/part-0016.jsonl.gz",
+   "bytes": 11297157,
+   "sha256": "57bbb7bf3a863f401cff797e356c3e3dc8c44646990a654ccbc32d46fa1b2a4b"
+  },
+  {
+   "path": "atcoder/submissions/part-0017.jsonl.gz",
+   "bytes": 10531667,
+   "sha256": "b93ebf84a7b120d055d2530ccc03edfa50debcacce86f0027dc02ac92b00ff9c"
+  },
+  {
+   "path": "atcoder/submissions/part-0018.jsonl.gz",
+   "bytes": 10267726,
+   "sha256": "f6341884867ea17b81df9b43cf9ab0f84b71b4a55f8797310ce37265b56a3fd9"
+  },
+  {
+   "path": "atcoder/submissions/part-0019.jsonl.gz",
+   "bytes": 9832520,
+   "sha256": "38a747bc44432e7d10402ad97075646d8e1dd2ea8695fdaaf8eeaf3bb8fd1c27"
+  },
+  {
+   "path": "atcoder/submissions/part-0020.jsonl.gz",
+   "bytes": 6527310,
+   "sha256": "100a9e7b04b5431c86b43cf9e64497a03a04b76c632777767943da1abd3a33ac"
+  },
+  {
+   "path": "atcoder/submissions/part-0021.jsonl.gz",
+   "bytes": 5411644,
+   "sha256": "98eea4ebb601a9da75266b31f0526be7082dae4301fdc1da5625225efe83732d"
+  },
+  {
+   "path": "atcoder/submissions/part-0022.jsonl.gz",
+   "bytes": 5539806,
+   "sha256": "16d36a4442eb2eb44a2e9bfcee24af4bd2f2dfd313337e8b5854724281858870"
+  },
+  {
+   "path": "atcoder/submissions/part-0023.jsonl.gz",
+   "bytes": 5113716,
+   "sha256": "0b8c3bb33116f9a18b9d8b26875d6f312a14927f024b05f50f2d4a7c996d0642"
+  },
+  {
+   "path": "atcoder/submissions/part-0024.jsonl.gz",
+   "bytes": 4756727,
+   "sha256": "02968d61237518df41fb33737557516585687244d0c40f44bf3403132ba2525b"
+  },
+  {
+   "path": "atcoder/submissions/part-0025.jsonl.gz",
+   "bytes": 4776505,
+   "sha256": "0367e2e1b5a1bef1d1c9d02c4599271f64214f806674428f9c89e9242db76260"
+  },
+  {
+   "path": "atcoder/submissions/part-0026.jsonl.gz",
+   "bytes": 4522997,
+   "sha256": "61da10c9349c73f15a92bae7670d42cf0823d0dfce73b0f55c11dc7caaf09393"
+  },
+  {
+   "path": "atcoder/submissions/part-0027.jsonl.gz",
+   "bytes": 4625134,
+   "sha256": "781194a261fcf9ad554c0052d9369a1f1c45f38b77f14ba8d736d4604186d96d"
+  },
+  {
+   "path": "atcoder/submissions/part-0028.jsonl.gz",
+   "bytes": 4485448,
+   "sha256": "de6503385c0a29cb041430b7d924faac686f1738cdcfdb271d539b95bdf0fa29"
+  },
+  {
+   "path": "atcoder/submissions/part-0029.jsonl.gz",
+   "bytes": 4767016,
+   "sha256": "7ec66cafa543dbeec17edc78e72a33ab10761521d40a4d7612be81307758dbb5"
+  },
+  {
+   "path": "atcoder/submissions/part-0030.jsonl.gz",
+   "bytes": 1718126,
+   "sha256": "2f729645c7a945f1c1d18562d684dc908102cd7655852ca2febcc4b17def4873"
+  },
+  {
+   "path": "atcoder/users.json",
+   "bytes": 88871,
+   "sha256": "218b1d8030c80e7cd985899363e3967b5d384029ef2f45b5b7eb84319697e86b"
+  },
+  {
+   "path": "codeforces/handles.json",
+   "bytes": 53568,
+   "sha256": "22e1f197e15c31ee260777546bb9a853162c4d25d56ed88aeb288fab52cc4b2e"
+  },
+  {
+   "path": "codeforces/handles_report.json",
+   "bytes": 600,
+   "sha256": "2a639191659f6ec81ecc2ecda9d5f84a41fe4cc42c104a17104433bf8e1d8a8d"
+  },
+  {
+   "path": "codeforces/problems.jsonl.gz",
+   "bytes": 303027,
+   "sha256": "773337f9ea8270f8bfccb1df3e5cc83f87c1b43eaf11001e387e091dcf80ad8b"
+  },
+  {
+   "path": "codeforces/submissions/_done.txt",
+   "bytes": 42216,
+   "sha256": "7c0f7a40ec9de9e739918b0ad158da4281f499445981b8bf827887589a8ef600"
+  },
+  {
+   "path": "codeforces/submissions/part-0000.jsonl.gz",
+   "bytes": 5971387,
+   "sha256": "1b6e54812d20d487f63837923cb9f9430f5d87a2b176b2fecf64d6e94c4e43ed"
+  },
+  {
+   "path": "codeforces/submissions/part-0001.jsonl.gz",
+   "bytes": 5521492,
+   "sha256": "e542ba5659f78b0efb4f1851bd97f0aa4f51e78451f9a84c046e435c13b61f58"
+  },
+  {
+   "path": "codeforces/submissions/part-0002.jsonl.gz",
+   "bytes": 5069526,
+   "sha256": "c0fd3d2eb023926499be9ca2354f727a9a4de6fb4a7e80fda9fdead6ab847680"
+  },
+  {
+   "path": "codeforces/submissions/part-0003.jsonl.gz",
+   "bytes": 4964818,
+   "sha256": "241b1e61a1ea2c5aecf7fe717a7df84e954ddeef3052af4c0d26ae6a3f568332"
+  },
+  {
+   "path": "codeforces/submissions/part-0004.jsonl.gz",
+   "bytes": 6356168,
+   "sha256": "c802ba8b717a2a4b2ae4dcbd5592038a6435f49820ffb91a03c0eef354098a65"
+  },
+  {
+   "path": "codeforces/submissions/part-0005.jsonl.gz",
+   "bytes": 5204430,
+   "sha256": "9fe909fe9bb7fe0d72e6d6ef65ed8d956b5d480fd9711db78516b091599ac65e"
+  },
+  {
+   "path": "codeforces/submissions/part-0006.jsonl.gz",
+   "bytes": 5811393,
+   "sha256": "6b1ff67606f0593da093c781e9797f1ceec9ad6969d3b796a04fb1fbddda0d88"
+  },
+  {
+   "path": "codeforces/submissions/part-0007.jsonl.gz",
+   "bytes": 4888852,
+   "sha256": "9c5ead71b977062df7109cfe1a9e6fbec3b417cf4ca54085bd48eab8f49c2ddc"
+  },
+  {
+   "path": "codeforces/submissions/part-0008.jsonl.gz",
+   "bytes": 6174651,
+   "sha256": "40797248bc1e98afa8d7e4af0d6070769142ce93123154b51f2031c620a1f908"
+  },
+  {
+   "path": "codeforces/submissions/part-0009.jsonl.gz",
+   "bytes": 5414677,
+   "sha256": "fe9126c0cdb2ab451fae292259b5aba6183dc21a491b1749f66aa75460c9c18e"
+  },
+  {
+   "path": "codeforces/submissions/part-0010.jsonl.gz",
+   "bytes": 6569117,
+   "sha256": "193d5407138e231fff06aff2d1f698b3c086e0f411e3afca5ad782bb7666a8e3"
+  },
+  {
+   "path": "codeforces/submissions/part-0011.jsonl.gz",
+   "bytes": 5263877,
+   "sha256": "45377b4205ae504817057dfc990ad60d43ab5f3cccdc5364eb45cfdb76879ceb"
+  },
+  {
+   "path": "codeforces/submissions/part-0012.jsonl.gz",
+   "bytes": 6512484,
+   "sha256": "1fc61bd9e5b7003591174eef053284f44e41919f4c8378059a479bf48697e329"
+  },
+  {
+   "path": "codeforces/submissions/part-0013.jsonl.gz",
+   "bytes": 5860095,
+   "sha256": "f0c35462a294753d9ba0e9da7deff9c581f6f6617bc0490a45437cfd0dbe8aad"
+  },
+  {
+   "path": "codeforces/submissions/part-0014.jsonl.gz",
+   "bytes": 4445128,
+   "sha256": "f3c9ca0037973a73e80354baeb6c83ce8947a8b46087cfaa8d2530159caeddcf"
+  },
+  {
+   "path": "codeforces/submissions/part-0015.jsonl.gz",
+   "bytes": 556479,
+   "sha256": "6642e8fca80b159b5b432dfa0b4231767a1aeacf2677c4c8c966c0cd62ebb418"
+  }
+ ]
+}

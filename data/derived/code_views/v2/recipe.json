@@ -1,0 +1,77 @@
+{
+ "name": "code_views",
+ "version": 2,
+ "built_at": "2026-10-08T03:20:48+00:00",
+ "script": "src/derived/code_views.py",
+ "script_sha256": "3d7e8f8cb060e5a3721a4cf155cc0f1c987864767d52808fd30e51c38b9a3af9",
+ "params": {
+  "languages": [
+   "C++"
+  ],
+  "is_cpp": "any submission of the bytes has lang_family C++",
+  "key": "code_sha256 (across corpora)",
+  "cpp": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -E -P -w -x c++ -std=gnu++17 -",
+  "cpp_timeout_s": 10,
+  "cpp_trigger": "any line starting with # other than #include / #pragma",
+  "type_map": {
+   "identifier|field_identifier|type_identifier|namespace_identifier|statement_identifier": "ID",
+   "number_literal": "NUM",
+   "string_literal|char_literal|raw_string_literal|system_lib_string": "STR",
+   "primitive_type|sized_type_specifier": "TYPE",
+   "comment": "(dropped)",
+   "other leaves": "their text"
+  },
+  "tree_sitter_cpp": "0.23.4",
+  "clang": "Apple clang version 17.0.0 (clang-1700.6.3.2)"
+ },
+ "is_synthetic": false,
+ "inputs": {
+  "canonical_builds": {
+   "atcoder": "20963f1578adcc460c19eff17b7e92f85917e01e97397d64efc68d6ae1d51bd4",
+   "codeforces": "e5020b4cdb941ded7a70018e5a3e6ca8a8868b16a32c334db00fcd7b765528a9",
+   "codenet": "bf9f92c1dca5cb20bfc64c9c3c9c54370227dccfc77d1befd0edc2a9128e1abb"
+  },
+  "derived": {}
+ },
+ "duckdb": "1.5.6",
+ "checks": {
+  "every C++ blob has a view": true,
+  "one row per blob": true,
+  "an empty token stream only comes from compile errors": true,
+  "view errors are rare (< 0.01%)": true,
+  "every C++ submission's code has a view": true
+ },
+ "counts": {
+  "files_with_no_tokens (all CE)": 23,
+  "blobs_by_language": {
+   "C++": 1715559,
+   "Python": 8973,
+   "Java": 5780,
+   "C": 786,
+   "FPC": 463,
+   "Kotlin": 459,
+   "Pascal": 407,
+   "Rust": 254,
+   "C#": 209,
+   "Q#": 142,
+   "Go": 137,
+   "D": 43
+  },
+  "cpp_status": {
+   "ok": 907028,
+   "not_needed": 806635,
+   "error": 1947
+  },
+  "parse_has_error_rate": 0.0322,
+  "parse_has_error_rate_by_cpp_status": {
+   "ok": 0.0323,
+   "not_needed": 0.0308,
+   "error": 0.5552
+  },
+  "median_tokens": 216.0,
+  "parse_error_rate_before_vs_after_expansion_where_cpp_ran": [
+   0.4052,
+   0.0323
+  ]
+ }
+}

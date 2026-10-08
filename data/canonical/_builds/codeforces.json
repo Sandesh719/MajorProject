@@ -1,0 +1,75 @@
+{
+ "corpus": "codeforces",
+ "built_at": "2026-10-07T23:53:12+00:00",
+ "inputs": [
+  "raw/codeforces_api_catalog/acq-2026-10-07",
+  "raw/codeforces_api_rated_list/acq-2026-10-07",
+  "raw/codeforces_api_user_status/acq-2026-10-07",
+  "raw/openr1_cf_submissions/07e7bf3_cfu"
+ ],
+ "input_manifest_sha256": {
+  "codeforces_api_catalog/acq-2026-10-07": "ffcaac2da620db26ba6c7aaf22919262975bf577b71fc0dd737963bd36c9f292",
+  "codeforces_api_rated_list/acq-2026-10-07": "9d0833b202444dd30116dc892546ddcf0747e3ac11f2f0a0d232b0ba89592c8e",
+  "codeforces_api_user_status/acq-2026-10-07": "53377276c5d2f3491131db669da417c2d1407828cc0d3e40a54e91739fa1df0c",
+  "openr1_cf_submissions/07e7bf3_cfu": "03022afa19eaf9fe37a8c44762a3325df6fcc8b85f931adc7ff06bc8d323575d"
+ },
+ "script": "src/canonical/build_codeforces.py",
+ "script_sha256": "43ece5a2808f1ce6ad180b7ff9d973b9cffcc6d8766acac2f98761626b1b1129",
+ "maps": {
+  "verdict_map.csv": "764ef4659e9ad7e991310cb589db90a50da41678187cbcaf4d76ac7fb0c0d686",
+  "language_family.csv": "3eac86ddb353157395f32af9858b07e4554e694b1e5bf0a9e163c0ab3e7f7a28"
+ },
+ "user_salt_sha256": "e160461f318d7a145d5659b358c37dfd754224f93a1faa031cbc576f08734dad",
+ "duckdb": "1.5.6",
+ "checks": {
+  "submission_uid unique": true,
+  "submissions == distinct ids in the histories": true,
+  "every verdict mapped": true,
+  "every submission's problem exists": true,
+  "every code row joined to a submission": true,
+  "open-r1 timestamp == API timestamp": true,
+  "user_uid unique": true,
+  "no handle hash collision": true,
+  "single-author submissions all have a user": true,
+  "timestamps parse": true
+ },
+ "counts": {
+  "problems": 27086,
+  "users": 980102,
+  "submissions": 2574151,
+  "code_blobs": 125443,
+  "contests": 2154,
+  "contest_problems": 11425,
+  "history_files": 9842,
+  "history_rows": 2575175,
+  "duplicate_rows_across_histories (team submissions)": 1024,
+  "submissions_by_code_status": {
+   "not_in_openr1": 2448130,
+   "present": 126021
+  },
+  "verdicts": {
+   "AC": 1152913,
+   "WA": 1036846,
+   "TLE": 160226,
+   "CE": 77203,
+   "RE": 74808,
+   "OTHER": 37956,
+   "MLE": 19798,
+   "PARTIAL": 14217,
+   "JUDGE_ERROR": 100,
+   "PE": 82,
+   "PENDING": 2
+  },
+  "participant_types": {
+   "PRACTICE": 1658434,
+   "CONTESTANT": 656037,
+   "VIRTUAL": 226013,
+   "OUT_OF_COMPETITION": 33667
+  },
+  "team_submissions": 106549,
+  "users_in_history_sample": 9842,
+  "users_with_code": 3751,
+  "problems_not_in_catalog (gym/acmsguru)": 15661,
+  "submissions_whose_contest_not_in_contest_list (gym)": 162815
+ }
+}

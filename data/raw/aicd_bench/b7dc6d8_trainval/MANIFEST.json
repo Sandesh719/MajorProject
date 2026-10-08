@@ -1,0 +1,47 @@
+{
+ "snapshot": "aicd_bench/b7dc6d8_trainval",
+ "source": "aicd_bench",
+ "class": "as_received_subset",
+ "complete": true,
+ "upstream": {
+  "name": "AICD Bench, task T1 only",
+  "url": "https://huggingface.co/datasets/AICD-bench/AICD-Bench",
+  "revision": "b7dc6d82257de6e0146d1e7b0831abd7088633af",
+  "license": "not declared on the dataset card (checked 2026-10-07)"
+ },
+ "retrieved_at": "2026-10-02",
+ "method": "HTTP download of T1/*.parquet from resolve/main",
+ "subset_of": {
+  "snapshot": "aicd_bench/b7dc6d8",
+  "manifest_sha256": "04909eb3ec78e596f19e13a2af7a529eb9fe99535d02ee44b14a5eb134798df5"
+ },
+ "scope": {
+  "rule": "T1 train and validation files only; test-0000{0..3} dropped (re-downloadable at the pinned revision)"
+ },
+ "notes": [
+  "Downloaded unpinned; pinned retroactively on 2026-10-07: all 6 sha256 equal the LFS oids at the revision above.",
+  "Other tasks (T2, T3) not downloaded."
+ ],
+ "verification": {
+  "files_kept": [
+   "T1/train-00000-of-00001.parquet",
+   "T1/validation-00000-of-00001.parquet"
+  ],
+  "sha256_mismatches": [],
+  "ok": true
+ },
+ "n_files": 2,
+ "total_bytes": 247804512,
+ "files": [
+  {
+   "path": "T1/train-00000-of-00001.parquet",
+   "bytes": 206546224,
+   "sha256": "be70ca1129236ab9c3a997aa62ad62cbb9a43a4aa68497be1d317618615ce58e"
+  },
+  {
+   "path": "T1/validation-00000-of-00001.parquet",
+   "bytes": 41258288,
+   "sha256": "f9fa5a44a44f262fd4639efe6d16f4f40372c72720ac4c6fe7983644f434c2aa"
+  }
+ ]
+}

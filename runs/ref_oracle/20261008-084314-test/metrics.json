@@ -1,0 +1,254 @@
+{
+ "all": {
+  "recall@1%": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "genuine_flag@1%": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "recall@5%": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "genuine_flag@5%": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "auroc": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "paired_win": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "n_rows": 35828,
+  "n_users": 1626,
+  "n_pos": 7483,
+  "coverage": 1.0
+ },
+ "corpus=codeforces": {
+  "recall@1%": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "genuine_flag@1%": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "recall@5%": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "genuine_flag@5%": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "auroc": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "paired_win": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "n_rows": 5500,
+  "n_users": 252,
+  "n_pos": 1148,
+  "coverage": 1.0
+ },
+ "corpus=codenet": {
+  "recall@1%": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "genuine_flag@1%": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "recall@5%": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "genuine_flag@5%": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "auroc": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "paired_win": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "n_rows": 30328,
+  "n_users": 1374,
+  "n_pos": 6335,
+  "coverage": 1.0
+ },
+ "difficulty_band=easy": {
+  "recall@1%": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "genuine_flag@1%": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "recall@5%": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "genuine_flag@5%": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "auroc": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "paired_win": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "n_rows": 15845,
+  "n_users": 1471,
+  "n_pos": 3339,
+  "coverage": 1.0
+ },
+ "difficulty_band=hard": {
+  "recall@1%": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "genuine_flag@1%": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "recall@5%": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "genuine_flag@5%": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "auroc": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "paired_win": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "n_rows": 8779,
+  "n_users": 1202,
+  "n_pos": 1762,
+  "coverage": 1.0
+ },
+ "difficulty_band=medium": {
+  "recall@1%": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "genuine_flag@1%": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "recall@5%": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "genuine_flag@5%": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "auroc": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "paired_win": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "n_rows": 10968,
+  "n_users": 1486,
+  "n_pos": 2351,
+  "coverage": 1.0
+ },
+ "difficulty_band=unknown": {
+  "recall@1%": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "genuine_flag@1%": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "recall@5%": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "genuine_flag@5%": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "auroc": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "paired_win": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "n_rows": 236,
+  "n_users": 67,
+  "n_pos": 31,
+  "coverage": 1.0
+ }
+}

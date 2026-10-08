@@ -1,0 +1,79 @@
+{
+ "snapshot": "openr1_cf_submissions/07e7bf3_cfu",
+ "source": "openr1_cf_submissions",
+ "class": "as_received_subset",
+ "complete": true,
+ "upstream": {
+  "name": "open-r1/codeforces-submissions",
+  "url": "https://huggingface.co/datasets/open-r1/codeforces-submissions",
+  "revision": "07e7bf31f284b0e90e02dfc7ab675d5821e1c068",
+  "license": "ODC-By 4.0 per card text; card YAML says cc-by-4.0"
+ },
+ "retrieved_at": "2026-10-06 (shard 0, selected_accepted) / 2026-10-07 (rest)",
+ "method": "rows of the parent's main split (data/*.parquet) selected by submission_id and rewritten as parquet; every column and value unchanged. selected_accepted / selected_incorrect not kept (curated, code rewritten)",
+ "subset_of": {
+  "snapshot": "openr1_cf_submissions/07e7bf3",
+  "manifest_sha256": "9eaccc2cb0c68ddb105b81c53bee04a835671bfb9c11385467cdc4527be2071c"
+ },
+ "scope": {
+  "rule": "submission_id appears in a user.status body in raw/codeforces_api_user_status/acq-2026-10-07",
+  "user_sample": "keep every row of user u iff sha256(u)[:8] (hex) < frac * 16^8"
+ },
+ "notes": [
+  "Main-split `source` is the original code (pilot 1: md5 equals og_source for all 1,017 rows the curated subset rewrote). selected_* configs are curated and may be rewritten.",
+  "No author field upstream; authors come from codeforces_api_contest_status.",
+  "Pilot 1 coverage: 99.9% of accepted in-contest submissions, 3.7% of failed in-contest, ~1% of practice."
+ ],
+ "verification": {
+  "sampled_user_submission_ids": 2574151,
+  "rows_expected": 126021,
+  "rows_written": 126021,
+  "rows_in_subset_not_in_parent": 0,
+  "rows_in_parent_sample_not_in_subset": 0,
+  "ok": true
+ },
+ "n_files": 8,
+ "total_bytes": 30102777,
+ "files": [
+  {
+   "path": "data/part-0.parquet",
+   "bytes": 3889599,
+   "sha256": "d4df1779a922094165f0f01eed091a7e39f0f720cd390250b83f7a7817c5a273"
+  },
+  {
+   "path": "data/part-1.parquet",
+   "bytes": 3693635,
+   "sha256": "539d3359ec83f595d77e13c1cfdb5560a7cfcf3b17da0e10fdb72af19b55f46c"
+  },
+  {
+   "path": "data/part-2.parquet",
+   "bytes": 3721282,
+   "sha256": "c01db26fcdda7feefb12ead887675cf8d5c4b6f6b89dd249d68bc15d79180f2d"
+  },
+  {
+   "path": "data/part-3.parquet",
+   "bytes": 3729229,
+   "sha256": "82fc7c260996f8b95d60525148bef8efefa0b4f59d74d73585afcb3198917991"
+  },
+  {
+   "path": "data/part-4.parquet",
+   "bytes": 3759317,
+   "sha256": "b659bda4738ebcb469f2f50ca921c49bf9ae142b5c4c2f8a64c96f01145fca9d"
+  },
+  {
+   "path": "data/part-5.parquet",
+   "bytes": 3757879,
+   "sha256": "da98891013290777b0706a6e6b67c537c51608998c0a183621f25560679e7999"
+  },
+  {
+   "path": "data/part-6.parquet",
+   "bytes": 3794064,
+   "sha256": "fd6c25c164c1833e1379ab3dae0c4b9e1ddb39e10a002eccf3c05772e61b974c"
+  },
+  {
+   "path": "data/part-7.parquet",
+   "bytes": 3757772,
+   "sha256": "d011c0756afcd7fbf80c2ba130b51bd18fe382a6f3535a015c54788326bc715f"
+  }
+ ]
+}

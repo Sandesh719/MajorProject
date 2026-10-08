@@ -1,0 +1,65 @@
+{
+ "name": "attempts",
+ "version": 1,
+ "built_at": "2026-10-08T01:53:57+00:00",
+ "script": "src/derived/attempts.py",
+ "script_sha256": "162df3d9b9a5968f500ef3f13a1ba32b37536d0936fda985867ff1baa048d184",
+ "params": {
+  "chain_order": [
+   "ts_unix",
+   "submission_uid"
+  ],
+  "diff": "difflib line opcodes; rstrip lines; drop blank lines",
+  "event_priority": [
+   "post_ac",
+   "zero_diff_resubmit",
+   "first_try_ac",
+   "ac_after_fail",
+   "fail_first",
+   "fail_retry"
+  ]
+ },
+ "is_synthetic": false,
+ "inputs": {
+  "canonical_builds": {
+   "atcoder": "20963f1578adcc460c19eff17b7e92f85917e01e97397d64efc68d6ae1d51bd4",
+   "codeforces": "e5020b4cdb941ded7a70018e5a3e6ca8a8868b16a32c334db00fcd7b765528a9",
+   "codenet": "bf9f92c1dca5cb20bfc64c9c3c9c54370227dccfc77d1befd0edc2a9128e1abb"
+  },
+  "derived": {}
+ },
+ "duckdb": "1.5.6",
+ "checks": {
+  "one row per individual submission": true,
+  "submission_uid unique": true,
+  "attempt_no is 1..n without gaps": true,
+  "every code-to-code transition got a diff": true,
+  "zero-diff transitions have an empty diff": true,
+  "first attempts have no previous": true
+ },
+ "counts": {
+  "event_types": {
+   "atcoder/first_try_ac": 1013340,
+   "atcoder/fail_retry": 724023,
+   "atcoder/post_ac": 599936,
+   "atcoder/fail_first": 520509,
+   "atcoder/ac_after_fail": 417595,
+   "codeforces/fail_retry": 777664,
+   "codeforces/first_try_ac": 619436,
+   "codeforces/fail_first": 516440,
+   "codeforces/ac_after_fail": 406321,
+   "codeforces/post_ac": 147611,
+   "codeforces/zero_diff_resubmit": 130,
+   "codenet/first_try_ac": 4485525,
+   "codenet/fail_retry": 3497020,
+   "codenet/fail_first": 2279038,
+   "codenet/ac_after_fail": 1860816,
+   "codenet/post_ac": 1777173,
+   "codenet/zero_diff_resubmit": 17296
+  },
+  "diffs": 830220,
+  "zero_diff_resubmits_with_lang_change": 4593,
+  "zero_diff_resubmits": 17426,
+  "median_diff_ratio_ac_after_fail": 0.07692307692307693
+ }
+}

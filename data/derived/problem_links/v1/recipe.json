@@ -1,0 +1,42 @@
+{
+ "name": "problem_links",
+ "version": 1,
+ "built_at": "2026-10-08T01:53:59+00:00",
+ "script": "src/derived/problem_links.py",
+ "script_sha256": "c2f10d689ae71bca206480a6037876531a75581d7e3dfa72edc7b1dbfbf77f86",
+ "params": {
+  "normalise": "lowercase, collapse whitespace, strip",
+  "fuzzy_min_ratio": 0.85,
+  "tiers": [
+   "exact",
+   "title_unique",
+   "fuzzy"
+  ],
+  "ambiguous_title": "unlinked"
+ },
+ "is_synthetic": false,
+ "inputs": {
+  "canonical_builds": {
+   "atcoder": "20963f1578adcc460c19eff17b7e92f85917e01e97397d64efc68d6ae1d51bd4",
+   "codeforces": "e5020b4cdb941ded7a70018e5a3e6ca8a8868b16a32c334db00fcd7b765528a9",
+   "codenet": "bf9f92c1dca5cb20bfc64c9c3c9c54370227dccfc77d1befd0edc2a9128e1abb"
+  },
+  "derived": {}
+ },
+ "duckdb": "1.5.6",
+ "checks": {
+  "one row per CodeNet AtCoder problem": true,
+  "an AtCoder problem is shared only across different contests": true
+ },
+ "counts": {
+  "by_method": {
+   "exact": 1375,
+   "title_unique": 112,
+   "unmatched": 25,
+   "fuzzy": 5,
+   "ambiguous_title": 2
+  },
+  "linked_with_irt_difficulty": 1339,
+  "atcoder_problems_claimed_twice_any_method": 138
+ }
+}

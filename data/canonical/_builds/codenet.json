@@ -1,0 +1,44 @@
+{
+ "corpus": "codenet",
+ "built_at": "2026-10-07T23:54:23+00:00",
+ "inputs": [
+  "raw/codenet_metadata/acq-2026-10-02_gz",
+  "raw/codenet_code_cpp/1e28cfa_u20"
+ ],
+ "input_manifest_sha256": {
+  "codenet_metadata/acq-2026-10-02_gz": "ccf3cc117e492f91146cc559ee534a450321af0c087efafaf47269e31a9daba6",
+  "codenet_code_cpp/1e28cfa_u20": "a0795e4884b43c953bfd7dfc38b1bee9e3ded0abdfe6860cae3924e430e103e4"
+ },
+ "script": "src/canonical/build_codenet.py",
+ "script_sha256": "ca5ec84d33c3966aea7ccd4a2fde49e3d7f2ce46fd2f76b3eaabcb29b37ba361",
+ "maps": {
+  "verdict_map.csv": "764ef4659e9ad7e991310cb589db90a50da41678187cbcaf4d76ac7fb0c0d686"
+ },
+ "duckdb": "1.5.6",
+ "checks": {
+  "submissions == raw metadata rows": true,
+  "submission_uid unique": true,
+  "every verdict mapped": true,
+  "every submission's problem exists": true,
+  "problems == problem_list rows": true,
+  "every code row joined to a submission": true,
+  "every code hash has a blob": true,
+  "code byte length == code_size": true,
+  "no sampled user lacks code it could have": true,
+  "timestamps parse": true
+ },
+ "counts": {
+  "problems": 4053,
+  "users": 154178,
+  "submissions": 13916868,
+  "code_blobs": 1608038,
+  "submissions_by_code_status": {
+   "not_sampled": 6349059,
+   "not_acquired": 5908341,
+   "present": 1652872,
+   "missing_in_mirror": 6596
+  },
+  "users_with_code": 20685,
+  "problems_with_statement": 3999
+ }
+}

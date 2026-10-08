@@ -1,0 +1,219 @@
+{
+ "snapshot": "openr1_cf_submissions/07e7bf3",
+ "source": "openr1_cf_submissions",
+ "class": "as_received",
+ "complete": true,
+ "upstream": {
+  "name": "open-r1/codeforces-submissions",
+  "url": "https://huggingface.co/datasets/open-r1/codeforces-submissions",
+  "revision": "07e7bf31f284b0e90e02dfc7ab675d5821e1c068",
+  "license": "ODC-By 4.0 per card text; card YAML says cc-by-4.0"
+ },
+ "method": "HTTP download of every .parquet from resolve/<revision>/, upstream paths preserved; each sha256 checked against its LFS oid",
+ "retrieved_at": "2026-10-06 (shard 0, selected_accepted) / 2026-10-07 (rest)",
+ "notes": [
+  "Main-split `source` is the original code (pilot 1: md5 equals og_source for all 1,017 rows the curated subset rewrote). selected_* configs are curated and may be rewritten.",
+  "No author field upstream; authors come from codeforces_api_contest_status.",
+  "Pilot 1 coverage: 99.9% of accepted in-contest submissions, 3.7% of failed in-contest, ~1% of practice."
+ ],
+ "manifest_written_at": "2026-10-07T12:46:00+00:00",
+ "n_files": 38,
+ "total_bytes": 5636584375,
+ "files": [
+  {
+   "path": "data/train-00000-of-00036.parquet",
+   "bytes": 141219443,
+   "sha256": "bacfc2870c80dc2c895194ce769282f35f9e817a577804489f428ff18671e235"
+  },
+  {
+   "path": "data/train-00001-of-00036.parquet",
+   "bytes": 137681163,
+   "sha256": "aa99f0ecd6fd0529ba88b047fb714a6b844a81fd12f921bcb2281c82c8237e4b"
+  },
+  {
+   "path": "data/train-00002-of-00036.parquet",
+   "bytes": 139552334,
+   "sha256": "55e4fb5ee2e811688d9da119ebce166d9b4bd9952453b105f9e1de5208e8341d"
+  },
+  {
+   "path": "data/train-00003-of-00036.parquet",
+   "bytes": 143716339,
+   "sha256": "b1d0f3983770fa2edf27b1800f6f31f7b222108a07223f7b3e9dc7dc819cacd3"
+  },
+  {
+   "path": "data/train-00004-of-00036.parquet",
+   "bytes": 149996680,
+   "sha256": "146086e1025256188ef7d6e0b5ddde616baa19d79c74b199b6a925dcf5952c78"
+  },
+  {
+   "path": "data/train-00005-of-00036.parquet",
+   "bytes": 146204952,
+   "sha256": "621b7df71eb8edd57916081e98b10ec3b33ccff120beb5086a26cb9a3426db35"
+  },
+  {
+   "path": "data/train-00006-of-00036.parquet",
+   "bytes": 146363064,
+   "sha256": "163b1f03ec8cc5ef10bd03ce6e06b39f5ebfefbe2451a5fc6427493641ac531c"
+  },
+  {
+   "path": "data/train-00007-of-00036.parquet",
+   "bytes": 142335360,
+   "sha256": "15baf1a41336ba118fa64ed7f4b9ee5df63865e20769303bac6380e6fa126ae4"
+  },
+  {
+   "path": "data/train-00008-of-00036.parquet",
+   "bytes": 153625623,
+   "sha256": "55d8533837bd59a2cde2626b665b47463043dec915f572531b9964c48ead160c"
+  },
+  {
+   "path": "data/train-00009-of-00036.parquet",
+   "bytes": 145647579,
+   "sha256": "285c7657712775092c9e89b9c1aaac11012326f2bc44eede79b3841cbf391f0b"
+  },
+  {
+   "path": "data/train-00010-of-00036.parquet",
+   "bytes": 155606249,
+   "sha256": "f75bf2cb5b355bd4d0217290d10d45ccdf5b5d7592677b297696491fa37247de"
+  },
+  {
+   "path": "data/train-00011-of-00036.parquet",
+   "bytes": 161290345,
+   "sha256": "71f9c1e3a23f629906afad73420307657a22eb3dab99ec47febbf35d95a0c957"
+  },
+  {
+   "path": "data/train-00012-of-00036.parquet",
+   "bytes": 150280537,
+   "sha256": "a97bd64b3c32299abde9f06ce1217c362296449fd70a182ec6f4f3fb7c56a6fc"
+  },
+  {
+   "path": "data/train-00013-of-00036.parquet",
+   "bytes": 170699714,
+   "sha256": "0f9482d8c541d5a704cf633dd0a9d5e5365b1d513af2b5132e1927ff36143c7a"
+  },
+  {
+   "path": "data/train-00014-of-00036.parquet",
+   "bytes": 175325414,
+   "sha256": "620be5fc06e0fe9dfc215ff2e1bb8caea5a31eac85587924819e398ceb47d4ee"
+  },
+  {
+   "path": "data/train-00015-of-00036.parquet",
+   "bytes": 179387808,
+   "sha256": "c384f32f1e44f5594f3baf58d0ffab08ecce8d25b6f5bf3dd745181082135387"
+  },
+  {
+   "path": "data/train-00016-of-00036.parquet",
+   "bytes": 188266130,
+   "sha256": "91b6f38ce6f7ff72bc870e819e589ec154911c508724f4ba789995b3578ab530"
+  },
+  {
+   "path": "data/train-00017-of-00036.parquet",
+   "bytes": 176089075,
+   "sha256": "4ea2154fa0818635cc2b6b1aac659ff128f5da8e355e3c5c7680b6e9c2117ab4"
+  },
+  {
+   "path": "data/train-00018-of-00036.parquet",
+   "bytes": 182558714,
+   "sha256": "565321dd829ae0fc9557c07f7bb86c22874995dcb065ae4701c314c2ce94f5fd"
+  },
+  {
+   "path": "data/train-00019-of-00036.parquet",
+   "bytes": 186304581,
+   "sha256": "c326c3877c50cd2495b64fd26949708ea08ad838a3883dba03c56f326badbb9e"
+  },
+  {
+   "path": "data/train-00020-of-00036.parquet",
+   "bytes": 200148115,
+   "sha256": "a12fc1f99be6ba14e4e1a8e87957b85a8d9a799fe8ea0e420d0a15d86adb8cdc"
+  },
+  {
+   "path": "data/train-00021-of-00036.parquet",
+   "bytes": 178727992,
+   "sha256": "80b786f7289bf12baea95e08f7c861b36743d6d2b355f370e91c539bf2803f41"
+  },
+  {
+   "path": "data/train-00022-of-00036.parquet",
+   "bytes": 150601982,
+   "sha256": "f02c2771071962c1bcbe4ea2abe0065da7fe10d26b9d0cce177aa7b722f3a4ed"
+  },
+  {
+   "path": "data/train-00023-of-00036.parquet",
+   "bytes": 139386582,
+   "sha256": "fcc40ddaeb89da7f964d34905eb1b8fd8575f14a85b0cf1651e8ab6a34b83dbc"
+  },
+  {
+   "path": "data/train-00024-of-00036.parquet",
+   "bytes": 141682117,
+   "sha256": "27a2ae1262cdec6955853b96357611f953cd88b9fa13926805d17d14b19eab9f"
+  },
+  {
+   "path": "data/train-00025-of-00036.parquet",
+   "bytes": 143535599,
+   "sha256": "0fe4a49998adbbfce09027033e613e939c46974aa3e25afc6a7b8e2a1f605dbb"
+  },
+  {
+   "path": "data/train-00026-of-00036.parquet",
+   "bytes": 130711596,
+   "sha256": "93e171bb2ef3ccc2f418000b23cfaaf88a7e3f7a6e477cc60946c3a53b504a0e"
+  },
+  {
+   "path": "data/train-00027-of-00036.parquet",
+   "bytes": 147585489,
+   "sha256": "a043ccb46adc11535a5275d4bbbbf9017063b2f6f1eadb1cc4a0b936990de0f6"
+  },
+  {
+   "path": "data/train-00028-of-00036.parquet",
+   "bytes": 137545575,
+   "sha256": "c213160e571efa30d27262cd2700a8c31029c077ba34cbfd974f361be7675106"
+  },
+  {
+   "path": "data/train-00029-of-00036.parquet",
+   "bytes": 132018645,
+   "sha256": "5a38b91fc4de6c895d6b916ef638e1c61c05f15b40cb942ee59854777134740e"
+  },
+  {
+   "path": "data/train-00030-of-00036.parquet",
+   "bytes": 127376471,
+   "sha256": "236e38b561874c83a403cedb1a0eacce883cbc43519f709034d70e41ea2ec8a7"
+  },
+  {
+   "path": "data/train-00031-of-00036.parquet",
+   "bytes": 135584076,
+   "sha256": "1e4c2582125f31e1fb50b03b5d47811d2890fac3e97e54d05c1c2c85c1bc260a"
+  },
+  {
+   "path": "data/train-00032-of-00036.parquet",
+   "bytes": 162507453,
+   "sha256": "c559dc5cf02cc9034f706e05bb7ed6f4717fb8d1aafdd96f859db877464ca9d1"
+  },
+  {
+   "path": "data/train-00033-of-00036.parquet",
+   "bytes": 140412577,
+   "sha256": "c1c01dc680363e4a9440b9b02051a830e28b471e1032a12a3c20c10b68d6353f"
+  },
+  {
+   "path": "data/train-00034-of-00036.parquet",
+   "bytes": 146731286,
+   "sha256": "6d1f79c0f00682aa5a00a20686185087c78f281cdc65296f6b1736e409030cdd"
+  },
+  {
+   "path": "data/train-00035-of-00036.parquet",
+   "bytes": 167802918,
+   "sha256": "4fdaf008cd04a6626fffd9bdddd43c4d86f2d8b6309b813880c7198a0323686b"
+  },
+  {
+   "path": "selected_accepted/train-00000-of-00001.parquet",
+   "bytes": 73893557,
+   "sha256": "ec63c336172356318feb072f3adfa3d4a75e836c9b91f1b56285ad679951be2a"
+  },
+  {
+   "path": "selected_incorrect/train-00000-of-00001.parquet",
+   "bytes": 8181241,
+   "sha256": "d2f9c6992fd58bceec9b8f131f5b51ab339c89a733771d2e606aaf08ae0b6748"
+  }
+ ],
+ "retired": {
+  "replaced_by": [
+   "openr1_cf_submissions/07e7bf3_cfu"
+  ]
+ }
+}

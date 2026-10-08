@@ -1,0 +1,33 @@
+{
+ "snapshot": "atcoder_kenkoooo_dump/2025-11-21",
+ "source": "atcoder_kenkoooo_dump",
+ "class": "as_received",
+ "complete": true,
+ "upstream": {
+  "name": "AtCoder Problems (kenkoooo) full submissions dump",
+  "url": "https://s3-ap-northeast-1.amazonaws.com/kenkoooo/submissions.csv.gz",
+  "revision": "Last-Modified Fri, 21 Nov 2025 11:01:10 GMT; ETag a475cd1985e0d85ab48b16b9f9f7df85-192; 1,603,172,550 bytes",
+  "license": "not stated; AtCoder Problems API docs ask for >1 s between accesses"
+ },
+ "method": "single HTTP download (curl, resumable); size equals Content-Length, Last-Modified rechecked after download, gzip -t passed",
+ "retrieved_at": "2026-10-07",
+ "notes": [
+  "Metadata only \u2014 no source code. Every AtCoder user, not a sample.",
+  "Upstream had not been refreshed for ~10.5 months at retrieval; nothing after 2025-11-21. For later activity of 7,586 users see _legacy_2026-10/atcoder (reshaped-free rows, selected users)."
+ ],
+ "manifest_written_at": "2026-10-07T12:52:15+00:00",
+ "n_files": 1,
+ "total_bytes": 1603172550,
+ "files": [
+  {
+   "path": "submissions.csv.gz",
+   "bytes": 1603172550,
+   "sha256": "0f2912345cca217796d811a74fca8883f9cf6b9255aca950aed320a6d5860bf9"
+  }
+ ],
+ "retired": {
+  "replaced_by": [
+   "atcoder_kenkoooo_dump/2025-11-21_u05"
+  ]
+ }
+}

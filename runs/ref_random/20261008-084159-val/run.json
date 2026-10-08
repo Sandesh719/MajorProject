@@ -1,0 +1,16 @@
+{
+ "method": "ref_random",
+ "split": "val",
+ "final": false,
+ "at": "20261008-084159",
+ "frame": "data/derived/eval_frame/v1",
+ "frame_recipe_sha256": "bdd45b88c3f6c6970a3086ed26238ca1d7c8495e0f6aacb214586f4127cca76b",
+ "script": "src/eval/reference.py",
+ "script_sha256": "1069aeee786cbcbd87ec9f06904bb30cfaa1d1ce3edee1316119ec33a822c035",
+ "params": {
+  "seed": 0
+ },
+ "n_fit_users": 0,
+ "previous_test_runs_of_this_method": 0,
+ "notes": "floor: uniform random scores"
+}
